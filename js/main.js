@@ -56,14 +56,18 @@ document.getElementById('delivery2-option').addEventListener('click',function(){
 
 //checking the cupon
 document.getElementById('cupon-btn').addEventListener('click',function(){
+    const cuponBtn = document.getElementById('cupon-btn');
     const cuponInput = document.getElementById('cupon-input');
     const cuponValue = cuponInput.value;
     const totalField = document.getElementById('total-field');
     const totalPrice = parseInt(totalField.innerText);
     const discount = totalPrice/20;
     const discPrice = totalPrice - discount;
+    //validating cupon
     if(cuponValue == 'stevekaku'){
         totalField.innerText = discPrice;
+        cuponInput.value = '';
+        cuponBtn.disabled = true;
     }
     cuponInput.value = '';
 })
