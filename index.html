@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Mac book</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <!-- bootsrtap grid layout -->
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <img class="img-fluid  h-75" src="images/mac.png" alt="">
+                    </div>
+                    <div class="col ">
+                       <header>
+                        <h1>Customize your blue 24-inch iMac with M1 chip</h1>
+                        <p>Apple M1 chip with 8-core CPU with 4 performencee cores and 4 effeciency cores.7-coree GPU,
+                            and 16-core Neural Engine with 8GB unified memory 256 GB SSD strage Two THunderbolt/usb 4
+                            ports Magic mouse Magic keyboard - US English</p>
+                       </header>
+                        <div class="">
+                            <h4>Memory</h4>
+                            <div>
+                                <button type="button" id="memory1-option" class="btn btn-outline-secondary ">8 GB unified
+                                    memory</button>
+                                <button type="button" id="memory2-option" class="btn btn-outline-secondary">16 GB unified memory</button>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h4>Storage</h4>
+                            <div>
+                                <button type="button" id="storage1-option" class="btn btn-outline-secondary ">256 GB SSD Storage</button>
+                                <button type="button" id="storage2-option" class="btn btn-outline-secondary">512 GB SSD Storage</button>
+                                <button type="button" id="storage3-option" class="btn btn-outline-secondary">1 TB SSD Storage</button>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h4>Choose your delivery option</h4>
+                            <div>
+                                <button type="button" id="delivery1-option" class="btn btn-outline-secondary ">Friday, Aug 25 FREE Prime Delivery</button>
+                                <button type="button" id="delivery2-option" class="btn btn-outline-secondary">Friday, Aug 21 Delivery Charge $20</button>
+                            </div>
+                        </div>
+                        <div class="container mt-5">
+                            <div class="row ">
+                              <div class="col">
+                                <h5>Best Price</h5>
+                                <h5>Extra Memory Cost</h5>
+                                <h5>Extra Storage Cost</h5>
+                                <h5>Delivery Charge</h5>
+                              </div>
+                              <div class="col">
+                                <h5>$<span>1299</span></h5>
+                                <h5>$<span id="memory-cost">0</span></h5>
+                                <h5>$<span id="storage-cost">0</span></h5>
+                                <h5>$<span id="delivery-cost">0</span></h5>
+                              </div>
+                              
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    <h5>Total Price</h5>
+                                </div>
+                                <div class="col">
+                                    <h5>$<span id="total">1299</span></h5>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <input class="w-50 mt-3" type="text">
+                                <button type="button" class="btn btn-danger w-25 h-25 mt-3 ms-2 ">apply</button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-4 d-flex justify-content-center">
+            <h1>Total:$<span>1299</span></h1>
+        </section>
+    </main>
+
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
