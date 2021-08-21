@@ -3,19 +3,27 @@ function changePrice(product,price){
     const productCost = document.getElementById(product+'-cost');
     productCost.innerText = price;
     calculateToatl();
+
+
 }
+//getting cost of the extra product
 function getValue(product){
     const productCost = document.getElementById(product+'-cost').innerText;
     const productPrice = parseInt(productCost);
     return productPrice;
 }
+//calculating total
 function calculateToatl(){
     const memoryPrice = getValue('memory');
     const storagePrice = getValue('storage');
     const deliveryPrice = getValue('delivery'); 
     const bestPrice = 1299;
+    // caculate total and set total in total price
     const totalPrice = memoryPrice+storagePrice+deliveryPrice+bestPrice;
-    const totalField = document.getElementById('total');
+    const total = document.getElementById('total');
+    total.innerText = totalPrice;
+    //get the last total field
+    const totalField = document.getElementById('total-field');
     totalField.innerText = totalPrice;
 }
 
@@ -46,7 +54,19 @@ document.getElementById('delivery2-option').addEventListener('click',function(){
 })
 
 
-
+//checking the cupon
+document.getElementById('cupon-btn').addEventListener('click',function(){
+    const cuponInput = document.getElementById('cupon-input');
+    const cuponValue = cuponInput.value;
+    const totalField = document.getElementById('total-field');
+    const totalPrice = parseInt(totalField.innerText);
+    const discount = totalPrice/20;
+    const discPrice = totalPrice - discount;
+    if(cuponValue == 'stevekaku'){
+        totalField.innerText = discPrice;
+    }
+    cuponInput.value = '';
+})
 
 
 
